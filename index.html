@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="Lab7WebFile/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Form Input Data</h1>
+        <form action="Lab7WebFile/proses.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="birthdate">Tanggal Lahir:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="job">Pekerjaan:</label>
+            <select id="job" name="job" required>
+                <option value="Web Development">Web Development</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Data Engineer">Data Engineer</option>
+                <option value="Security engineer">Security engineer</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
